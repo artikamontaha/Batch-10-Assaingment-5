@@ -16,25 +16,59 @@
     </style>
 </head>
 <body class=" ">
-    <header class="py-10 bg-[#F9F7F3]">
-        <div class="md:container mx-auto">
-            <nav class="flex justify-around">
-                <div class="">
-                    <button class="btn bg-[#B4F461] py-3 px-7 rounded-xl">Button</button>
-
-                </div>
-                <div class="flex font-semibold">
-                    <img src="./assets/logo.png" alt="">
-                    <h1 class="mt-4 ml-2 font-bold text-2xl">Donate Bangladesh</h1>
-                </div>
-                <div class="flex">
-                    <img src="./assets/coin.png" alt="">
-                    <h1 class="mt-2 ml-2 font-bold text-2xl">5500</h1>
-                    <h1 class="mt-2 ml-2 font-bold text-2xl">BDT</h1>
-                </div>
-            </nav>
+    <header>
+        <!-- Navbar section start -->
+         <div class="py-10 bg-[#F9F7F3]">
+            <div class="md:container mx-auto">
+                <nav class="flex justify-around">
+                    <div class="">
+                        <button class="btn bg-[#B4F461] py-3 px-7 rounded-xl">Blog</button>
     
-        </div>
+                    </div>
+                    <div class="flex font-semibold">
+                        <img src="./assets/logo.png" alt="">
+                        <h1 class="mt-4 ml-2 font-bold text-2xl">Donate Bangladesh</h1>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/coin.png" alt="">
+                        <h1 class="mt-2 ml-2 font-bold text-2xl">5500</h1>
+                        <h1 class="mt-2 ml-2 font-bold text-2xl">BDT</h1>
+                    </div>
+                </nav>
+        
+            </div>
+    
+         </div>
+    <!-- Navbar section end -->
+
+    <div class="flex justify-center p-16 gap-8">
+        <button class="btn bg-[#B4F461] py-3 px-7 rounded-xl">Donation</button>
+        <button class="btn btn-outline py-3 px-7">History</button>
+
+    </div>
     </header>
+
+
+    <main class="md:container mx-auto">
+        <!-- card-1 -->
+        <div class="md:flex gap-10 border rounded-md p-5 ">
+            <div><img class="md:h-[400px] md:w-[1100px]" src="./assets/noakhali.png" alt=""></div>
+            <div class="">
+                <button class="btn btn-neutral my-5"><img src="./assets/coin.png" alt="">0 BDT</button>
+                <h1 class="my-3 font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                <h3 class=""> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</h3>
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs mt-2 my-3" />            
+                
+                <button class="btn flex  flex-col bg-[#B4F461] py-3 px-7 rounded-xl">Donation</button>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </main>
 </body>
 </html>
