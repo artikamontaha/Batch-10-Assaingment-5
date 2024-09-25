@@ -21,7 +21,7 @@ font-family: "Lexend", system-ui;
 <!-- Navbar section start -->
 <div class="bg-[#F9F7F3]  shadow-lg z-50 h-20">
 <div class="md:container mx-auto">
-<nav class="flex justify-around items-center h-full">
+<nav class="flex justify-around items-center h-full pt-3">
 <div class="">
 <button id="home_btn" class="btn bg-[#B4F461] py-3 px-7 rounded-xl">Home</button>
 
@@ -55,25 +55,65 @@ font-family: "Lexend", system-ui;
 <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
 <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)??</div>
 <div class="collapse-content">
-<p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. The DOM allows developers to interact with and manipulate the content, structure, and styling of a webpage dynamically, using languages like JavaScript. Through the DOM, you can modify HTML and CSS on the fly, change the appearance of elements, or even create new content. Essentially, the DOM bridges the gap between HTML/CSS and programming, making webpages interactive and responsive to user inputs.</p>
+<p>The Document Object Model (DOM) is a programming interface for web documents, such as HTML and XML files. It represents the structure of a document as a tree of objects, with each object corresponding to a part of the document (such as an element, attribute, or piece of text). The DOM allows programming languages like JavaScript to access, manipulate, and update the content, structure, and styles of a web page dynamically. For example, you can use JavaScript to change the text inside an element, alter its styles, or respond to user interactions (like clicks or key presses). When a web page is loaded, the browser creates a DOM of the page. JavaScript can then use methods like getElementById() or querySelector() to interact with different parts of the document. This dynamic manipulation makes web pages more interactive, enabling things like form validation, animations, and other real-time updates without needing to reload the entire page.
+
+Overall, the DOM is an essential concept in web development, bridging the static structure of HTML with the dynamic capabilities of JavaScript.</p>
 </div>
 </div>
 <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
 <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM??</div>
 <div class="collapse-content">
-<p>To select an element from the DOM, you use various methods provided by JavaScript, each tailored to different types of elements. For example, you can select an element by its unique ID, by its class name, by the tag name, or by more complex CSS selectors. The most commonly used methods are selecting by ID, which targets a specific element, or by class and tag name, which can target multiple elements. Additionally, you can use query selectors to retrieve elements based on CSS-style selectors for more flexible and powerful selection options.</p>
+<p>o select an element from the DOM, JavaScript provides various methods:    <br>
+
+
+    1.By ID: You can select an element by its unique ID. This is the fastest and most direct way, as an ID is unique within a page.
+    <br>
+    
+    2.By Class Name: You can select one or more elements that share a common class. This method returns a collection of all elements with that class.
+    <br>
+
+    3.By Tag Name: You can select elements by their tag name, such as div, p, or span. This also returns a collection of all matching elements.
+    <br>
+
+    4.By CSS Selectors: The querySelector method selects the first element that matches a specific CSS selector, while querySelectorAll selects all matching elements.
+    <br>
+
+    5.By Attribute: You can select elements by using specific attributes, such as name, type, or data- attributes.
+    <br>
+
+    These methods allow you to access and manipulate the structure, content, or style of elements on the webpage dynamically.</p>
 </div>
 </div>
 <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
 <div class="collapse-title text-xl font-medium">What is Event delegation in the text of the DOM, and why it is usefull??</div>
 <div class="collapse-content">
-<p>Event delegation is a technique in the DOM where you attach a single event listener to a parent element rather than individual child elements. When an event is triggered by one of the child elements, it "bubbles up" to the parent, and the parent can handle the event based on which child triggered it.</p>
+<p>Event delegation is a technique in JavaScript where a single event listener is attached to a parent element rather than adding multiple listeners to individual child elements. This parent element listens for events that occur on its child elements due to event bubbling, where events triggered on child elements propagate up to their ancestors. <br> <br>
+    Why it is useful:
+    1.Efficiency: Instead of attaching many event listeners to each child element, you only need one listener on the parent element. This reduces memory usage and improves performance, especially when working with large numbers of elements.
+    <br>
+    2.Dynamic Content Handling: Event delegation is especially useful when dealing with dynamic content. If new child elements are added to the DOM after the page has loaded, they will still be handled by the same event listener on the parent without needing additional setup.
+    <br>
+    3.Simplified Code: With fewer event listeners, your code becomes cleaner and easier to manage, making debugging simpler.
+    <br><br>
+    Event delegation is particularly beneficial for managing events on lists, tables, or other large sets of elements, and it makes handling dynamic content updates much more manageable.
+    
+    
+    </p>
 </div>
 </div>
 <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
 <div class="collapse-title text-xl font-medium">How do you manipulate an Element's attribute and styles using the DOM??</div>
 <div class="collapse-content">
-<p>To manipulate an element's attributes using the DOM, you can modify its properties directly or use specific methods to change or remove attributes. For instance, you can change an image's source, update the href of a link, or alter form input attributes like placeholder or value. You can also add or remove attributes dynamically, such as adding a disabled state to a button.</p>
+<p>Manipulating Styles: <br>
+    1.Modify Inline Styles: You can change the CSS properties of an element by directly modifying its inline styles. For example, you might change the color, size, or visibility of an element.
+    <br>
+    2.Add or Remove CSS Classes: By adding or removing class names, you can apply pre-defined CSS styles to elements. This allows you to toggle between different styles dynamically.
+    <br>
+    3.Change Style Sheets: It's possible to link or modify entire stylesheets to affect how elements are styled across the entire document.
+    <br><br>
+    These techniques allow you to dynamically adjust the appearance and behavior of elements on a webpage, providing greater interactivity and control over the user interface.
+    
+   </p>
 </div>
 </div>
 

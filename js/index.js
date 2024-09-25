@@ -13,7 +13,7 @@ DonateBtn1.addEventListener('click', function(){
     }
 
     else if (saveMoney < inputValue) {
-        return alert ('You have not enough money..')
+        return alert ('Sorry! You have not enough money..')
     }
     else{
         alert('Congrats! Your Money added succesfully...')
