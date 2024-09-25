@@ -22,9 +22,9 @@ DonateBtn1.addEventListener('click', function(){
         const mainusMoney = saveMoney - addMoney;
         document.getElementById('save_Money').innerText = mainusMoney;
         document.getElementById('Donate_money').innerText = addMoney;
-        inputField.value = ''; 
+        inputField.value = ''; 
 
-    }
+    }
 })
 
 
@@ -59,4 +59,40 @@ btn_2.addEventListener('click', function(){
     }
 
     inputBTN.value = '';
+})
+
+
+
+// This is for card-3
+const btn3 = document.getElementById('btn_3')
+btn3.addEventListener('click', function(){
+    inputBTN_1 = document.getElementById('input_btn_2')
+    input1 = parseFloat(inputBTN_1.value);
+    const btn3 = parseFloat(document.getElementById('Donate_money_2').innerText)
+    const saveMoney = parseFloat(document.getElementById('save_Money').innerText)
+
+    if(isNaN(input1)){
+        return alert('Type a number please...')
+    }
+    else if(input1 <= 0){
+        return alert("Input don't take a negetive number... so try again please")
+    }
+
+    else if(input1 > saveMoney){
+        alert("Sorry,,, You don't have enough money")
+    }
+    else{
+        alert ('Congrats! Your money added seccesfully')
+        const addmoney = parseFloat(document.getElementById('Donate_money_2').innerText)
+        const plusMoney = input1 + btn3;
+        const costMoney = saveMoney - plusMoney
+        document.getElementById('save_Money').innerText = costMoney;
+        document.getElementById('Donate_money_2').innerText = plusMoney
+
+    }
+
+
+    inputBTN_1.value = '';
+
+
 })
