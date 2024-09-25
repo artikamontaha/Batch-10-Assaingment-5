@@ -13,7 +13,7 @@ DonateBtn1.addEventListener('click', function(){
     }
 
     else if (saveMoney < inputValue) {
-        return alert ('Sorry! You have not enough money..')
+        return alert ("Sorry,,, You don't have enough money")
     }
     else{
         alert('Congrats! Your Money added succesfully...')
@@ -25,4 +25,38 @@ DonateBtn1.addEventListener('click', function(){
         inputField.value = ''; 
 
     }
+})
+
+
+
+
+// This is for card-2
+const btn_2 = document.getElementById('btn_2')
+btn_2.addEventListener('click', function(){
+    inputBTN = document.getElementById('input_btn_1')
+    inputOutpot = parseFloat(inputBTN.value);
+    const btn2 = parseFloat(document.getElementById('Donate_money_1').innerText)
+    const agoMoney = parseFloat(document.getElementById('save_Money').innerText)
+    
+    if(isNaN(inputOutpot)){
+        return alert('Type a number please...')
+    }
+    else if(inputOutpot <= 0){
+        return alert("Input don't take a negetive number... so try again please")
+    }
+
+    else if(inputOutpot > agoMoney){
+        alert("Sorry,,, You don't have enough money")
+    }
+
+    else{
+        alert('Congrats! Your money added seccesfully')
+        const add_money = parseFloat(document.getElementById('Donate_money_1').innerText)
+        const plusMoney = inputOutpot + btn2;
+        const costMoney = agoMoney - plusMoney
+        document.getElementById('save_Money').innerText = costMoney;
+        document.getElementById('Donate_money_1').innerText = plusMoney
+    }
+
+    inputBTN.value = '';
 })
